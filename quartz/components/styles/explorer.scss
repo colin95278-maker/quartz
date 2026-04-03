@@ -126,9 +126,9 @@ button.desktop-explorer {
       pointer-events: all;
       padding: 5px 8px 5px 10px;
       border-radius: 0;
-      font-size: 13px;
+      font-size: 11px;
       font-weight: 400;
-      line-height: 20px;
+      line-height: 18px;
       display: block;
       border-left: 3px solid transparent;
       transition: all 0.15s ease;
@@ -179,9 +179,9 @@ button.desktop-explorer {
   & div > a {
     color: var(--dark);
     font-family: var(--headerFont);
-    font-size: 13px;
+    font-size: 11px;
     font-weight: 600;
-    line-height: 20px;
+    line-height: 18px;
     display: inline-block;
   }
 
@@ -202,7 +202,7 @@ button.desktop-explorer {
     font-family: var(--headerFont);
 
     & span {
-      font-size: 13px;
+      font-size: 11px;
       display: inline-block;
       color: var(--dark);
       font-weight: 600;
