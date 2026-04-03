@@ -2,6 +2,31 @@
 
 // === 飞书帮助中心 (Lark Suite Help Center) 风格 ===
 
+// 字体：覆盖为飞书同款系统字体栈（苹方/微软雅黑）
+$lark-font-stack: "PingFang SC", "Helvetica Neue", "Microsoft YaHei", Tahoma, Arial, sans-serif;
+
+body,
+article,
+p,
+li,
+a,
+span,
+td,
+th,
+blockquote,
+input,
+button {
+  font-family: $lark-font-stack;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: $lark-font-stack;
+}
 
 // 防溢出
 article {

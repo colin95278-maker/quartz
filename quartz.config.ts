@@ -20,11 +20,11 @@ const config: QuartzConfig = {
     ignorePatterns: ["private", "templates", ".obsidian"],
     defaultDateType: "modified",
     theme: {
-      fontOrigin: "local",
+      fontOrigin: "googleFonts",
       cdnCaching: true,
       typography: {
-        header: "PingFang SC",
-        body: "PingFang SC",
+        header: "Noto Sans SC",
+        body: "Noto Sans SC",
         code: "JetBrains Mono",
       },
       colors: {
