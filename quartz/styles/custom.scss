@@ -45,6 +45,11 @@ article {
   min-width: unset;
 }
 
+// 首页：取消宽度限制，让画廊铺满
+body[data-slug="index"] .page > #quartz-body > .center {
+  max-width: 100%;
+}
+
 
 // === 链接 ===
 // 内容区链接：飞书蓝，无下划线
