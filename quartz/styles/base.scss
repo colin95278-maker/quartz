@@ -156,10 +156,10 @@ a {
   margin: 0 auto;
   & article {
     & > h1 {
-      font-size: 2rem;
+      font-size: 1.5rem;
       font-weight: 600;
       line-height: 1.5;
-      margin-bottom: 1rem;
+      margin-bottom: 0.5rem;
     }
 
     & li:has(> input[type="checkbox"]) {
@@ -390,41 +390,39 @@ h6 {
   }
 }
 
-// typography - GitHub Docs style
+// typography - Lark Suite help center style
 h1 {
-  font-size: 2rem;
-  margin-top: 0;
-  margin-bottom: 1rem;
+  font-size: 1.5rem;
+  margin-top: 1.5rem;
+  margin-bottom: 0.5rem;
   font-weight: 600;
   line-height: 1.5;
 }
 
 h2 {
-  font-size: 1.5rem;
+  font-size: 1rem;
   margin-top: 1.5rem;
-  margin-bottom: 1rem;
+  margin-bottom: 0.5rem;
   font-weight: 600;
-  line-height: 1.25;
-  padding-bottom: 0.45em;
-  border-bottom: 1px solid var(--lightgray);
+  line-height: 1.5;
 }
 
 h3 {
-  font-size: 1.25rem;
-  margin-top: 1.5rem;
-  margin-bottom: 1rem;
+  font-size: 1rem;
+  margin-top: 1.25rem;
+  margin-bottom: 0.5rem;
   font-weight: 600;
-  line-height: 1.25;
+  line-height: 1.5;
 }
 
 h4,
 h5,
 h6 {
-  font-size: 1rem;
-  margin-top: 1.5rem;
-  margin-bottom: 1rem;
+  font-size: 0.875rem;
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
   font-weight: 600;
-  line-height: 1.25;
+  line-height: 1.5;
 }
 
 figure[data-rehype-pretty-code-figure] {
@@ -521,6 +519,7 @@ li,
 p {
   line-height: 1.5;
   font-size: 1rem;
+  color: var(--darkgray);
 }
 
 p {
@@ -529,7 +528,7 @@ p {
 }
 
 li {
-  margin-bottom: 0.25rem;
+  margin-bottom: 0.15rem;
 }
 
 .table-container {

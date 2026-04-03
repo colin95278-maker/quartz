@@ -1,6 +1,6 @@
 @use "./base.scss";
 
-// === GitHub Docs 风格 ===
+// === 飞书帮助中心 (Lark Suite Help Center) 风格 ===
 
 // 防溢出
 article {
@@ -13,34 +13,34 @@ article {
   overflow: hidden;
 }
 
-// === 链接样式 - GitHub Docs ===
-// 内容区链接：蓝色 + 下划线 + offset
+// === 链接 ===
+// 内容区链接：飞书蓝，无下划线
 article a {
   color: var(--secondary);
-  text-decoration: underline;
-  text-underline-offset: 25%;
+  text-decoration: none;
   &:hover {
-    text-decoration: underline;
+    opacity: 0.8;
   }
   &:visited {
     color: var(--secondary);
   }
 }
 
-// 非内容区链接：无下划线
+// 非内容区链接
 a {
   text-decoration: none;
-  color: var(--secondary);
+  color: var(--darkgray);
   &:hover {
-    text-decoration: underline;
+    color: var(--secondary);
   }
 }
 
-// === 左侧导航栏 - GitHub Docs sidebar ===
+// === 左侧导航栏 - 飞书 sidebar ===
 .page-title {
   font-weight: 600;
-  font-size: 1.25rem;
+  font-size: 1.1rem;
   color: var(--dark);
+  margin-bottom: 0.5rem;
 }
 
 .sidebar.left {
@@ -52,21 +52,22 @@ a {
     font-size: 0.875rem;
     line-height: 1.5;
     color: var(--darkgray);
-    padding: 4px 8px;
-    border-radius: 6px;
+    padding: 6px 12px;
+    border-radius: 8px;
     display: block;
     text-decoration: none;
+    transition: background-color 0.15s;
 
     &:hover {
       text-decoration: none;
-      background-color: rgba(208, 215, 222, 0.24);
+      background-color: rgba(31, 35, 41, 0.08);
+      color: var(--dark);
     }
 
-    // active 状态
     &.active {
-      background-color: rgba(208, 215, 222, 0.24);
-      color: var(--dark);
-      font-weight: 400;
+      background-color: rgba(51, 112, 255, 0.08);
+      color: var(--secondary);
+      font-weight: 500;
     }
   }
 
@@ -80,9 +81,9 @@ a {
 
   .folder-container div > a:hover {
     text-decoration: none;
+    color: var(--secondary);
   }
 
-  // 树形线条颜色
   .folder-outer > ul {
     border-left-color: var(--lightgray);
   }
@@ -102,7 +103,7 @@ ul.section-ul {
 
 li.section-li {
   margin-bottom: 0;
-  padding: 0.6rem 0;
+  padding: 0.65rem 0;
   border-bottom: 1px solid var(--lightgray);
 
   &:first-child {
@@ -110,7 +111,7 @@ li.section-li {
   }
 
   & > .section {
-    grid-template-columns: 6.5em 1fr;
+    grid-template-columns: 6em 1fr;
     align-items: baseline;
     gap: 0 1rem;
 
@@ -122,16 +123,16 @@ li.section-li {
 
     & > .desc > h3 {
       margin: 0;
-      font-size: 0.95rem;
+      font-size: 0.875rem;
       font-weight: 400;
       line-height: 1.5;
 
       & > a {
-        color: var(--secondary);
-        font-weight: 600;
+        color: var(--dark);
         text-decoration: none;
         &:hover {
-          text-decoration: underline;
+          color: var(--secondary);
+          text-decoration: none;
         }
       }
     }
@@ -142,39 +143,38 @@ li.section-li {
 
 // 文章元信息
 .content-meta {
-  font-size: 0.8rem;
+  font-size: 0.75rem;
   color: var(--gray);
-  margin-bottom: 1rem;
+  margin-bottom: 1.5rem;
 }
 
-// 面包屑
+// 面包屑 - 飞书 14px 灰色
 .breadcrumb-container {
-  font-size: 0.8rem;
+  font-size: 0.875rem;
   color: var(--gray);
-  margin-bottom: 0.3rem;
+  margin-bottom: 0.5rem;
 
   a {
-    color: var(--secondary);
+    color: var(--gray);
     text-decoration: none;
     &:hover {
-      text-decoration: underline;
+      color: var(--secondary);
     }
   }
 }
 
-// === 右侧目录 - GitHub Docs "In this article" ===
+// === 右侧目录 - 飞书 "本文内容" ===
 .toc {
   font-size: 0.875rem;
 
-  // 标题样式
   & > h3,
   & > button {
-    font-size: 0.875rem;
+    font-size: 1rem;
     font-weight: 600;
     color: var(--dark);
+    margin-bottom: 0.5rem;
   }
 
-  // 目录链接
   a {
     font-size: 0.875rem;
     font-weight: 400;
@@ -182,6 +182,7 @@ li.section-li {
     text-decoration: none;
     padding: 4px 0;
     display: block;
+    line-height: 1.4;
 
     &:hover {
       color: var(--secondary);
@@ -195,12 +196,21 @@ li.section-li {
   }
 }
 
-// 引用块 - GitHub style
+// 引用块 / 提示框 - 飞书风格浅蓝底
 blockquote {
-  border-left: 0.25em solid var(--lightgray);
-  padding: 0 1em;
+  border: 1px solid #c2d4ff;
+  background: rgba(240, 244, 255, 0.6);
+  padding: 0.875rem;
   margin: 0 0 1rem;
-  color: var(--gray);
+  border-radius: 8px;
+  color: var(--darkgray);
+  font-size: 0.875rem;
+  line-height: 1.5;
+
+  // 去掉内部段落底部边距
+  p:last-child {
+    margin-bottom: 0;
+  }
 }
 
 // 加粗
@@ -212,34 +222,39 @@ strong {
 // 图片
 article img {
   max-width: 100%;
-  margin: 1rem 0;
-  border-radius: 6px;
+  margin: 0.75rem 0;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(31, 35, 41, 0.08);
 }
 
 // 列表缩进
 article ul,
 article ol {
-  padding-left: 2em;
+  padding-left: 1.5em;
   margin-bottom: 1rem;
 }
 
-// 行内代码 - GitHub Docs style
+article ol {
+  list-style-type: decimal;
+}
+
+// 行内代码 - 飞书风格
 code {
   font-size: 85%;
   font-family: var(--codeFont);
-  background: rgba(175, 184, 193, 0.2);
-  padding: 0.2em 0.4em;
-  border-radius: 6px;
+  background: #eff1f3;
+  padding: 2px 6px;
+  border-radius: 4px;
   color: var(--dark);
 }
 
 // 代码块
 pre {
-  background: #f6f8fa;
-  border-radius: 6px;
+  background: #f2f3f5;
+  border-radius: 8px;
   padding: 1rem;
   overflow-x: auto;
-  line-height: 1.45;
+  line-height: 1.5;
   margin-bottom: 1rem;
 
   code {
@@ -250,31 +265,47 @@ pre {
   }
 }
 
-// 表格
+// 表格 - 飞书风格
 table {
   border-collapse: collapse;
   width: 100%;
+  margin-bottom: 1rem;
+  font-size: 0.875rem;
 
   th, td {
     border: 1px solid var(--lightgray);
-    padding: 6px 13px;
+    padding: 8px 12px;
+    text-align: left;
   }
 
   th {
     font-weight: 600;
-    background: rgba(175, 184, 193, 0.1);
+    background: #f2f3f5;
+    color: var(--dark);
   }
 
   tr:nth-child(2n) {
-    background: rgba(175, 184, 193, 0.05);
+    background: rgba(242, 243, 245, 0.5);
   }
 }
 
-// 搜索和按钮圆角
+// 文件夹页标题
+h1.article-title {
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+// 搜索框 - 飞书圆角
 .search {
-  border-radius: 6px;
+  border-radius: 8px;
 }
 
 button {
   border-radius: 6px;
+}
+
+// callout 样式覆盖 - 飞书风格
+.callout {
+  border-radius: 8px;
+  border: 1px solid var(--lightgray);
 }
