@@ -21,3 +21,4 @@
 /sessions/brave-gifted-rubin/mnt/投资笔记/交易日记/日记-2026-03-23-TRI投资教训.md
 /sessions/vibrant-serene-edison/mnt/投资笔记/基础概念/自由现金流（FCF）.md
 /sessions/elegant-bold-pasteur/mnt/投资笔记/基础概念/DCF（现金流折现估值法）.md
+/sessions/intelligent-confident-mccarthy/mnt/投资笔记/基础概念/业主盈余（Owner's Earnings）.md
