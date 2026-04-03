@@ -1,8 +1,8 @@
 @use "./base.scss";
 
-// === 极简 Medium 风格 ===
+// === 少数派 (sspai.com) 风格 ===
 
-// 内容区宽度限制，防止溢出
+// 内容区限制
 article {
   max-width: 100%;
   overflow-wrap: break-word;
@@ -13,21 +13,22 @@ article {
   overflow: hidden;
 }
 
-// 链接样式
+// 链接样式：少数派蓝色，无下划线
 a {
   text-decoration: none;
+  color: var(--secondary);
   &:hover {
-    text-decoration: underline;
+    opacity: 0.8;
   }
 }
 
 // 左侧导航
 .page-title {
-  font-weight: 700;
-  font-size: 1.3rem;
+  font-weight: 600;
+  font-size: 1.2rem;
 }
 
-// 左侧导航字体缩小，紧凑排列
+// 左侧导航紧凑
 .sidebar.left {
   font-size: 0.85rem;
 }
@@ -37,21 +38,25 @@ a {
   .folder-container div > a,
   .folder-container div > button span {
     font-size: 0.85rem;
-    line-height: 1.6;
+    line-height: 1.7;
   }
 }
 
-// 分割线
+// 分割线 - 少数派风格
 hr {
   border: none;
   border-top: 1px solid var(--lightgray);
-  margin: 2.5rem 0;
+  margin: 3rem 0;
 }
 
-// === 列表页优化 ===
+// === 列表页 ===
+ul.section-ul {
+  margin-top: 1.5em;
+}
+
 li.section-li {
-  margin-bottom: 0.3rem;
-  padding: 0.8rem 0;
+  margin-bottom: 0;
+  padding: 1rem 0;
   border-bottom: 1px solid var(--lightgray);
 
   &:last-child {
@@ -59,13 +64,13 @@ li.section-li {
   }
 
   & > .section {
-    grid-template-columns: 7em 1fr;
+    grid-template-columns: 6.5em 1fr;
     align-items: baseline;
     gap: 0 1.5rem;
 
     & .meta {
-      font-size: 0.85rem;
-      opacity: 0.45;
+      font-size: 0.82rem;
+      opacity: 0.4;
       white-space: nowrap;
     }
 
@@ -73,37 +78,39 @@ li.section-li {
       margin: 0;
       font-size: 1.05rem;
       font-weight: 500;
-      line-height: 1.5;
+      line-height: 1.6;
 
       & > a {
         color: var(--dark);
         &:hover {
           color: var(--secondary);
+          text-decoration: none;
         }
       }
     }
   }
 }
 
-// === 内容页优化 ===
+// === 内容页 ===
 
-// 文章元信息（日期、阅读时间）
+// 文章元信息
 .content-meta {
   font-size: 0.85rem;
-  opacity: 0.5;
-  margin-bottom: 2rem;
+  opacity: 0.45;
+  margin-bottom: 2.5rem;
 }
 
 // 面包屑导航
 .breadcrumb-container {
   font-size: 0.8rem;
-  opacity: 0.5;
-  margin-bottom: 0.5rem;
+  opacity: 0.4;
+  margin-bottom: 0.3rem;
 }
 
 // 右侧目录
 .toc {
   font-size: 0.82rem;
+  opacity: 0.85;
 
   & .depth-3,
   & .depth-4 {
@@ -111,23 +118,31 @@ li.section-li {
   }
 }
 
-// 文件夹页标题
-.page > article h1.article-title {
-  font-size: 1.8rem;
-}
-
-// 文件夹描述
-.page > article .article-title + p {
-  opacity: 0.5;
-  font-size: 0.95rem;
-}
-
-// 引用块
+// 引用块 - 少数派风格
 blockquote {
   border-left: 3px solid var(--lightgray);
   padding-left: 1.2rem;
+  margin: 2rem 0;
   margin-left: 0;
   color: var(--darkgray);
-  opacity: 0.85;
-  font-style: italic;
+  opacity: 0.75;
+}
+
+// strong 加粗文字颜色
+strong {
+  color: var(--dark);
+  font-weight: 600;
+}
+
+// 图片间距
+article img {
+  margin: 1.5rem 0;
+  border-radius: 4px;
+}
+
+// 有序/无序列表缩进
+article ul,
+article ol {
+  padding-left: 1.25rem;
+  margin-bottom: 2rem;
 }
