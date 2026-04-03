@@ -2,9 +2,15 @@
 
 // === 极简 Medium 风格 ===
 
-// 内容区宽度
+// 内容区宽度限制，防止溢出
 article {
-  max-width: 740px;
+  max-width: 100%;
+  overflow-wrap: break-word;
+  word-break: break-word;
+}
+
+.center {
+  overflow: hidden;
 }
 
 // 链接样式
