@@ -1,6 +1,6 @@
 @use "./base.scss";
 
-// === GitHub 风格 ===
+// === GitHub Docs 风格 ===
 
 // 防溢出
 article {
@@ -13,7 +13,21 @@ article {
   overflow: hidden;
 }
 
-// 链接：GitHub 蓝，无下划线，hover 加下划线
+// === 链接样式 - GitHub Docs ===
+// 内容区链接：蓝色 + 下划线 + offset
+article a {
+  color: var(--secondary);
+  text-decoration: underline;
+  text-underline-offset: 25%;
+  &:hover {
+    text-decoration: underline;
+  }
+  &:visited {
+    color: var(--secondary);
+  }
+}
+
+// 非内容区链接：无下划线
 a {
   text-decoration: none;
   color: var(--secondary);
@@ -22,10 +36,10 @@ a {
   }
 }
 
-// === 左侧导航栏 - GitHub sidebar 风格 ===
+// === 左侧导航栏 - GitHub Docs sidebar ===
 .page-title {
   font-weight: 600;
-  font-size: 1.1rem;
+  font-size: 1.25rem;
   color: var(--dark);
 }
 
@@ -34,33 +48,47 @@ a {
 }
 
 .explorer-content {
-  li > a,
+  li > a {
+    font-size: 0.875rem;
+    line-height: 1.5;
+    color: var(--darkgray);
+    padding: 4px 8px;
+    border-radius: 6px;
+    display: block;
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: none;
+      background-color: rgba(208, 215, 222, 0.24);
+    }
+
+    // active 状态
+    &.active {
+      background-color: rgba(208, 215, 222, 0.24);
+      color: var(--dark);
+      font-weight: 400;
+    }
+  }
+
   .folder-container div > a,
   .folder-container div > button span {
     font-size: 0.875rem;
-    line-height: 1.75;
-    color: var(--darkgray);
-  }
-
-  li > a:hover,
-  .folder-container div > a:hover {
-    color: var(--secondary);
-  }
-
-  // 文件夹名
-  .folder-container div > button span {
+    line-height: 1.5;
     font-weight: 600;
-    font-size: 0.875rem;
     color: var(--dark);
   }
 
-  // 左侧树形线条
+  .folder-container div > a:hover {
+    text-decoration: none;
+  }
+
+  // 树形线条颜色
   .folder-outer > ul {
     border-left-color: var(--lightgray);
   }
 }
 
-// 分割线 - GitHub style
+// 分割线
 hr {
   border: none;
   border-top: 1px solid var(--lightgray);
@@ -74,7 +102,7 @@ ul.section-ul {
 
 li.section-li {
   margin-bottom: 0;
-  padding: 0.75rem 0;
+  padding: 0.6rem 0;
   border-bottom: 1px solid var(--lightgray);
 
   &:first-child {
@@ -89,19 +117,19 @@ li.section-li {
     & .meta {
       font-size: 0.75rem;
       color: var(--gray);
-      opacity: 1;
       white-space: nowrap;
     }
 
     & > .desc > h3 {
       margin: 0;
-      font-size: 1rem;
+      font-size: 0.95rem;
       font-weight: 400;
       line-height: 1.5;
 
       & > a {
         color: var(--secondary);
         font-weight: 600;
+        text-decoration: none;
         &:hover {
           text-decoration: underline;
         }
@@ -110,7 +138,7 @@ li.section-li {
   }
 }
 
-// === 内容页 - GitHub markdown-body 风格 ===
+// === 内容页 ===
 
 // 文章元信息
 .content-meta {
@@ -124,15 +152,46 @@ li.section-li {
   font-size: 0.8rem;
   color: var(--gray);
   margin-bottom: 0.3rem;
+
+  a {
+    color: var(--secondary);
+    text-decoration: none;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
 }
 
-// 右侧目录
+// === 右侧目录 - GitHub Docs "In this article" ===
 .toc {
-  font-size: 0.8rem;
+  font-size: 0.875rem;
+
+  // 标题样式
+  & > h3,
+  & > button {
+    font-size: 0.875rem;
+    font-weight: 600;
+    color: var(--dark);
+  }
+
+  // 目录链接
+  a {
+    font-size: 0.875rem;
+    font-weight: 400;
+    color: var(--darkgray);
+    text-decoration: none;
+    padding: 4px 0;
+    display: block;
+
+    &:hover {
+      color: var(--secondary);
+      text-decoration: none;
+    }
+  }
 
   & .depth-3,
   & .depth-4 {
-    font-size: 0.75rem;
+    font-size: 0.8rem;
   }
 }
 
@@ -150,22 +209,21 @@ strong {
   color: var(--dark);
 }
 
-// 图片 - GitHub style
+// 图片
 article img {
   max-width: 100%;
   margin: 1rem 0;
   border-radius: 6px;
-  border: 1px solid var(--lightgray);
 }
 
-// 列表缩进 - GitHub 24px
+// 列表缩进
 article ul,
 article ol {
   padding-left: 2em;
   margin-bottom: 1rem;
 }
 
-// 行内代码 - GitHub style
+// 行内代码 - GitHub Docs style
 code {
   font-size: 85%;
   font-family: var(--codeFont);
@@ -175,7 +233,7 @@ code {
   color: var(--dark);
 }
 
-// 代码块 - GitHub style
+// 代码块
 pre {
   background: #f6f8fa;
   border-radius: 6px;
@@ -192,7 +250,7 @@ pre {
   }
 }
 
-// 表格 - GitHub style
+// 表格
 table {
   border-collapse: collapse;
   width: 100%;
@@ -212,18 +270,11 @@ table {
   }
 }
 
-// 文件夹页标题不加下划线
-h1.article-title {
-  border-bottom: none;
-  padding-bottom: 0;
-}
-
-// 搜索框 - GitHub rounded
+// 搜索和按钮圆角
 .search {
   border-radius: 6px;
 }
 
-// 搜索按钮和暗色切换按钮
 button {
   border-radius: 6px;
 }

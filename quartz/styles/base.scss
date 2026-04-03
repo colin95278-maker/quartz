@@ -156,12 +156,10 @@ a {
   margin: 0 auto;
   & article {
     & > h1 {
-      font-size: 2em;
+      font-size: 2rem;
       font-weight: 600;
-      line-height: 1.25;
+      line-height: 1.5;
       margin-bottom: 1rem;
-      padding-bottom: 0.3em;
-      border-bottom: 1px solid var(--lightgray);
     }
 
     & li:has(> input[type="checkbox"]) {
@@ -392,29 +390,27 @@ h6 {
   }
 }
 
-// typography - GitHub markdown style
+// typography - GitHub Docs style
 h1 {
-  font-size: 2em;
-  margin-top: 1.5rem;
+  font-size: 2rem;
+  margin-top: 0;
   margin-bottom: 1rem;
   font-weight: 600;
-  line-height: 1.25;
-  padding-bottom: 0.3em;
-  border-bottom: 1px solid var(--lightgray);
+  line-height: 1.5;
 }
 
 h2 {
-  font-size: 1.5em;
+  font-size: 1.5rem;
   margin-top: 1.5rem;
   margin-bottom: 1rem;
   font-weight: 600;
   line-height: 1.25;
-  padding-bottom: 0.3em;
+  padding-bottom: 0.45em;
   border-bottom: 1px solid var(--lightgray);
 }
 
 h3 {
-  font-size: 1.25em;
+  font-size: 1.25rem;
   margin-top: 1.5rem;
   margin-bottom: 1rem;
   font-weight: 600;
@@ -424,7 +420,7 @@ h3 {
 h4,
 h5,
 h6 {
-  font-size: 1em;
+  font-size: 1rem;
   margin-top: 1.5rem;
   margin-bottom: 1rem;
   font-weight: 600;
