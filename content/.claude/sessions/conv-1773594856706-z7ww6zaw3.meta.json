@@ -1,0 +1,22 @@
+{
+  "id": "conv-1773594856706-z7ww6zaw3",
+  "title": "Verify CEO insider trading disclosure",
+  "titleGenerationStatus": "success",
+  "createdAt": 1773594856707,
+  "updatedAt": 1773781902182,
+  "lastResponseAt": 1773774093580,
+  "sessionId": "b84d03c1-9579-4740-b0cc-697075148132",
+  "sdkSessionId": "b84d03c1-9579-4740-b0cc-697075148132",
+  "previousSdkSessionIds": [
+    "8c6daecb-9dc0-4f90-a1ec-f7b233395ef8"
+  ],
+  "usage": {
+    "model": "sonnet",
+    "inputTokens": 1,
+    "cacheCreationInputTokens": 425,
+    "cacheReadInputTokens": 131530,
+    "contextWindow": 1000000,
+    "contextTokens": 131956,
+    "percentage": 13
+  }
+}

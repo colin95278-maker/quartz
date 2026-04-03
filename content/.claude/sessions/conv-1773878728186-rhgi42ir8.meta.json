@@ -1,0 +1,19 @@
+{
+  "id": "conv-1773878728186-rhgi42ir8",
+  "title": "整合联合健康跨文件夹文章内容",
+  "titleGenerationStatus": "success",
+  "createdAt": 1773878728186,
+  "updatedAt": 1773880086468,
+  "lastResponseAt": 1773878737069,
+  "sessionId": null,
+  "currentNote": "联合健康/05-护城河分析.md",
+  "usage": {
+    "model": "sonnet",
+    "inputTokens": 3,
+    "cacheCreationInputTokens": 5244,
+    "cacheReadInputTokens": 8513,
+    "contextWindow": 1000000,
+    "contextTokens": 13760,
+    "percentage": 1
+  }
+}

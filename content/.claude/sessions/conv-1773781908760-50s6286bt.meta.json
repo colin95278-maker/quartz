@@ -1,0 +1,19 @@
+{
+  "id": "conv-1773781908760-50s6286bt",
+  "title": "Analyze WK's AI across divisions vs competitors",
+  "titleGenerationStatus": "success",
+  "createdAt": 1773781908760,
+  "updatedAt": 1773860155413,
+  "lastResponseAt": 1773860095293,
+  "sessionId": "1eff764c-70c3-4abf-b172-918cabc81bd0",
+  "sdkSessionId": "1eff764c-70c3-4abf-b172-918cabc81bd0",
+  "usage": {
+    "model": "sonnet",
+    "inputTokens": 1,
+    "cacheCreationInputTokens": 483,
+    "cacheReadInputTokens": 116686,
+    "contextWindow": 1000000,
+    "contextTokens": 117170,
+    "percentage": 12
+  }
+}
