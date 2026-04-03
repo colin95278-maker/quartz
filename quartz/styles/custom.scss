@@ -1,11 +1,13 @@
 @use "./base.scss";
 
-// 极简 Medium 风格
+// === 极简 Medium 风格 ===
+
+// 内容区宽度
 article {
-  max-width: 720px;
+  max-width: 740px;
 }
 
-// 链接样式：无下划线，hover 时显示
+// 链接样式
 a {
   text-decoration: none;
   &:hover {
@@ -13,14 +15,113 @@ a {
   }
 }
 
-// 左侧导航标题更轻
+// 左侧导航
 .page-title {
-  font-weight: 600;
+  font-weight: 700;
+  font-size: 1.3rem;
 }
 
-// 分割线更柔和
+// 左侧导航字体缩小，紧凑排列
+.sidebar.left {
+  font-size: 0.85rem;
+}
+
+.explorer-content {
+  li > a,
+  .folder-container div > a,
+  .folder-container div > button span {
+    font-size: 0.85rem;
+    line-height: 1.6;
+  }
+}
+
+// 分割线
 hr {
   border: none;
   border-top: 1px solid var(--lightgray);
   margin: 2.5rem 0;
+}
+
+// === 列表页优化 ===
+li.section-li {
+  margin-bottom: 0.3rem;
+  padding: 0.8rem 0;
+  border-bottom: 1px solid var(--lightgray);
+
+  &:last-child {
+    border-bottom: none;
+  }
+
+  & > .section {
+    grid-template-columns: 7em 1fr;
+    align-items: baseline;
+    gap: 0 1.5rem;
+
+    & .meta {
+      font-size: 0.85rem;
+      opacity: 0.45;
+      white-space: nowrap;
+    }
+
+    & > .desc > h3 {
+      margin: 0;
+      font-size: 1.05rem;
+      font-weight: 500;
+      line-height: 1.5;
+
+      & > a {
+        color: var(--dark);
+        &:hover {
+          color: var(--secondary);
+        }
+      }
+    }
+  }
+}
+
+// === 内容页优化 ===
+
+// 文章元信息（日期、阅读时间）
+.content-meta {
+  font-size: 0.85rem;
+  opacity: 0.5;
+  margin-bottom: 2rem;
+}
+
+// 面包屑导航
+.breadcrumb-container {
+  font-size: 0.8rem;
+  opacity: 0.5;
+  margin-bottom: 0.5rem;
+}
+
+// 右侧目录
+.toc {
+  font-size: 0.82rem;
+
+  & .depth-3,
+  & .depth-4 {
+    font-size: 0.78rem;
+  }
+}
+
+// 文件夹页标题
+.page > article h1.article-title {
+  font-size: 1.8rem;
+}
+
+// 文件夹描述
+.page > article .article-title + p {
+  opacity: 0.5;
+  font-size: 0.95rem;
+}
+
+// 引用块
+blockquote {
+  border-left: 3px solid var(--lightgray);
+  padding-left: 1.2rem;
+  margin-left: 0;
+  color: var(--darkgray);
+  opacity: 0.85;
+  font-style: italic;
 }
