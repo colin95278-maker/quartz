@@ -12,7 +12,11 @@ article {
 // 内容区宽度限制（飞书 688px，我们稍宽一些适配中文长段落）
 .center {
   overflow: hidden;
+}
+
+.page > #quartz-body > .center {
   max-width: 750px;
+  min-width: unset;
 }
 
 
