@@ -35,58 +35,16 @@ a {
   }
 }
 
-// === 左侧导航栏 - 飞书 sidebar ===
+// === 左侧导航栏 ===
 .page-title {
   font-weight: 600;
   font-size: 1.1rem;
   color: var(--dark);
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.25rem;
 }
 
 .sidebar.left {
   font-size: 0.875rem;
-}
-
-.explorer-content {
-  li > a {
-    font-size: 0.875rem;
-    line-height: 1.5;
-    color: var(--darkgray);
-    padding: 6px 12px;
-    border-radius: 8px;
-    display: block;
-    text-decoration: none;
-    transition: background-color 0.15s;
-
-    &:hover {
-      text-decoration: none;
-      background-color: rgba(31, 35, 41, 0.08);
-      color: var(--dark);
-    }
-
-    &.active {
-      background-color: rgba(51, 112, 255, 0.08);
-      color: var(--secondary);
-      font-weight: 500;
-    }
-  }
-
-  .folder-container div > a,
-  .folder-container div > button span {
-    font-size: 0.875rem;
-    line-height: 1.5;
-    font-weight: 600;
-    color: var(--dark);
-  }
-
-  .folder-container div > a:hover {
-    text-decoration: none;
-    color: var(--secondary);
-  }
-
-  .folder-outer > ul {
-    border-left-color: var(--lightgray);
-  }
 }
 
 // 分割线
@@ -103,7 +61,7 @@ ul.section-ul {
 
 li.section-li {
   margin-bottom: 0;
-  padding: 0.65rem 0;
+  padding: 0.6rem 0;
   border-bottom: 1px solid var(--lightgray);
 
   &:first-child {
@@ -143,17 +101,11 @@ li.section-li {
 
 // 文章元信息
 .content-meta {
-  font-size: 0.75rem;
-  color: var(--gray);
   margin-bottom: 1.5rem;
 }
 
-// 面包屑 - 飞书 14px 灰色
+// 面包屑
 .breadcrumb-container {
-  font-size: 0.875rem;
-  color: var(--gray);
-  margin-bottom: 0.5rem;
-
   a {
     color: var(--gray);
     text-decoration: none;
@@ -163,54 +115,9 @@ li.section-li {
   }
 }
 
-// === 右侧目录 - 飞书 "本文内容" ===
-.toc {
-  font-size: 0.875rem;
-
-  & > h3,
-  & > button {
-    font-size: 1rem;
-    font-weight: 600;
-    color: var(--dark);
-    margin-bottom: 0.5rem;
-  }
-
-  a {
-    font-size: 0.875rem;
-    font-weight: 400;
-    color: var(--darkgray);
-    text-decoration: none;
-    padding: 4px 0;
-    display: block;
-    line-height: 1.4;
-
-    &:hover {
-      color: var(--secondary);
-      text-decoration: none;
-    }
-  }
-
-  & .depth-3,
-  & .depth-4 {
-    font-size: 0.8rem;
-  }
-}
-
-// 引用块 / 提示框 - 飞书风格浅蓝底
-blockquote {
-  border: 1px solid #c2d4ff;
-  background: rgba(240, 244, 255, 0.6);
-  padding: 0.875rem;
-  margin: 0 0 1rem;
-  border-radius: 8px;
-  color: var(--darkgray);
-  font-size: 0.875rem;
-  line-height: 1.5;
-
-  // 去掉内部段落底部边距
-  p:last-child {
-    margin-bottom: 0;
-  }
+// 引用块内部段落
+blockquote p:last-child {
+  margin-bottom: 0;
 }
 
 // 加粗
@@ -238,64 +145,13 @@ article ol {
   list-style-type: decimal;
 }
 
-// 行内代码 - 飞书风格
-code {
-  font-size: 85%;
-  font-family: var(--codeFont);
-  background: #eff1f3;
-  padding: 2px 6px;
-  border-radius: 4px;
-  color: var(--dark);
-}
-
-// 代码块
-pre {
-  background: #f2f3f5;
-  border-radius: 8px;
-  padding: 1rem;
-  overflow-x: auto;
-  line-height: 1.5;
-  margin-bottom: 1rem;
-
-  code {
-    background: none;
-    padding: 0;
-    border-radius: 0;
-    font-size: 0.85rem;
-  }
-}
-
-// 表格 - 飞书风格
-table {
-  border-collapse: collapse;
-  width: 100%;
-  margin-bottom: 1rem;
-  font-size: 0.875rem;
-
-  th, td {
-    border: 1px solid var(--lightgray);
-    padding: 8px 12px;
-    text-align: left;
-  }
-
-  th {
-    font-weight: 600;
-    background: #f2f3f5;
-    color: var(--dark);
-  }
-
-  tr:nth-child(2n) {
-    background: rgba(242, 243, 245, 0.5);
-  }
-}
-
 // 文件夹页标题
 h1.article-title {
   border-bottom: none;
   padding-bottom: 0;
 }
 
-// 搜索框 - 飞书圆角
+// 搜索框
 .search {
   border-radius: 8px;
 }
@@ -304,7 +160,7 @@ button {
   border-radius: 6px;
 }
 
-// callout 样式覆盖 - 飞书风格
+// callout 覆盖
 .callout {
   border-radius: 8px;
   border: 1px solid var(--lightgray);
