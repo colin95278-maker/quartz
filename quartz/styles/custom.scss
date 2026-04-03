@@ -106,13 +106,16 @@ li.section-li {
 
 // === 内容页 ===
 
-// 文章元信息
+// 文章元信息（飞书样式：灰色小字 + 阅读时间图标）
 .content-meta {
-  margin-bottom: 1.5rem;
+  margin-bottom: 0.75rem;
+  font-size: 0.8rem;
+  color: var(--gray);
 }
 
-// 面包屑
+// 面包屑（飞书样式：小号灰色文字 + > 分隔）
 .breadcrumb-container {
+  margin-bottom: 0.5rem;
   a {
     color: var(--gray);
     text-decoration: none;

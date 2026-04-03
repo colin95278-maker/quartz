@@ -30,14 +30,14 @@ TagList.css = `
   display: flex;
   padding-left: 0;
   gap: 0.4rem;
-  margin: 1rem 0;
+  margin: 0.5rem 0;
   flex-wrap: wrap;
 }
 
 .section-li > .section > .tags {
   justify-content: flex-end;
 }
-  
+
 .tags > li {
   display: inline-block;
   white-space: nowrap;
@@ -46,10 +46,21 @@ TagList.css = `
 }
 
 a.internal.tag-link {
-  border-radius: 8px;
-  background-color: var(--highlight);
-  padding: 0.2rem 0.4rem;
-  margin: 0 0.1rem;
+  border-radius: 4px;
+  background-color: transparent;
+  border: 1px solid var(--lightgray);
+  padding: 0.15rem 0.5rem;
+  margin: 0;
+  font-size: 0.8rem;
+  font-weight: 400;
+  color: var(--gray);
+  transition: all 0.15s ease;
+}
+
+a.internal.tag-link:hover {
+  color: var(--secondary);
+  border-color: var(--secondary);
+  background-color: rgba(51, 112, 255, 0.04);
 }
 `
 

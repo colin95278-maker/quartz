@@ -22,10 +22,11 @@ button.toc-header {
   align-items: center;
 
   & h3 {
-    font-size: 0.875rem;
+    font-size: 0.8rem;
     font-weight: 600;
     display: inline-block;
     margin: 0;
+    color: var(--darkgray);
   }
 
   & .fold {
@@ -50,10 +51,11 @@ ul.toc-content.overflow {
 
   & > li > a {
     color: var(--darkgray);
-    opacity: 0.7;
-    font-size: 0.875rem;
-    line-height: 1.5;
-    padding: 3px 0;
+    opacity: 0.65;
+    font-size: 0.8rem;
+    font-weight: 400;
+    line-height: 1.6;
+    padding: 2px 0;
     display: block;
     text-decoration: none;
     transition:
@@ -62,6 +64,7 @@ ul.toc-content.overflow {
     &.in-view {
       opacity: 1;
       color: var(--secondary);
+      font-weight: 500;
     }
     &:hover {
       opacity: 1;
@@ -71,7 +74,7 @@ ul.toc-content.overflow {
 
   @for $i from 0 through 6 {
     & .depth-#{$i} {
-      padding-left: calc(0.875rem * #{$i});
+      padding-left: calc(0.75rem * #{$i});
     }
   }
 }
