@@ -126,6 +126,9 @@ button.desktop-explorer {
       pointer-events: all;
       padding: 4px 8px;
       border-radius: 6px;
+      font-size: 14px;
+      font-weight: 500;
+      line-height: 22px;
       transition: background-color 0.15s;
 
       &:hover {
@@ -135,7 +138,7 @@ button.desktop-explorer {
       &.active {
         opacity: 1;
         color: var(--secondary);
-        background-color: rgba(51, 112, 255, 0.06);
+        background-color: rgba(51, 112, 255, 0.12);
       }
     }
   }
@@ -171,9 +174,9 @@ button.desktop-explorer {
   & div > a {
     color: var(--dark);
     font-family: var(--headerFont);
-    font-size: 0.875rem;
-    font-weight: 600;
-    line-height: 1.5;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 22px;
     display: inline-block;
   }
 
@@ -194,12 +197,12 @@ button.desktop-explorer {
     font-family: var(--headerFont);
 
     & span {
-      font-size: 0.875rem;
+      font-size: 14px;
       display: inline-block;
       color: var(--dark);
-      font-weight: 600;
+      font-weight: 500;
       margin: 0;
-      line-height: 1.5;
+      line-height: 22px;
       pointer-events: none;
     }
   }
