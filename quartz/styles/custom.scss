@@ -2,6 +2,14 @@
 
 // === 飞书帮助中心 (Lark Suite Help Center) 风格 ===
 
+// 字体：使用与飞书一致的系统原生字体栈（不加载外部字体，速度更快）
+:root {
+  --headerFont: -apple-system, "Helvetica Neue", "PingFang SC", "Microsoft YaHei", Tahoma, Arial,
+    sans-serif;
+  --bodyFont: -apple-system, "Helvetica Neue", "PingFang SC", "Microsoft YaHei", Tahoma, Arial,
+    sans-serif;
+}
+
 // 防溢出
 article {
   max-width: 100%;
