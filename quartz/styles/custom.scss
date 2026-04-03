@@ -9,9 +9,12 @@ article {
   word-break: break-word;
 }
 
+// 内容区宽度限制（飞书 688px，我们稍宽一些适配中文长段落）
 .center {
   overflow: hidden;
+  max-width: 750px;
 }
+
 
 // === 链接 ===
 // 内容区链接：飞书蓝，无下划线
@@ -149,6 +152,7 @@ article ol {
 h1.article-title {
   border-bottom: none;
   padding-bottom: 0;
+  margin-bottom: 0.375rem;
 }
 
 // 搜索框
