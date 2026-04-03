@@ -1,3 +1,26 @@
 @use "./base.scss";
 
-// put your custom CSS here!
+// 极简 Medium 风格
+article {
+  max-width: 720px;
+}
+
+// 链接样式：无下划线，hover 时显示
+a {
+  text-decoration: none;
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+// 左侧导航标题更轻
+.page-title {
+  font-weight: 600;
+}
+
+// 分割线更柔和
+hr {
+  border: none;
+  border-top: 1px solid var(--lightgray);
+  margin: 2.5rem 0;
+}
