@@ -22,3 +22,4 @@
 /sessions/vibrant-serene-edison/mnt/投资笔记/基础概念/自由现金流（FCF）.md
 /sessions/elegant-bold-pasteur/mnt/投资笔记/基础概念/DCF（现金流折现估值法）.md
 /sessions/intelligent-confident-mccarthy/mnt/投资笔记/基础概念/业主盈余（Owner's Earnings）.md
+/sessions/dazzling-confident-tesla/mnt/投资笔记/基础概念/折现率（Discount Rate）.md
