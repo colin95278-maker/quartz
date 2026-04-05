@@ -25,3 +25,4 @@
 /sessions/dazzling-confident-tesla/mnt/投资笔记/基础概念/折现率（Discount Rate）.md
 /sessions/confident-keen-goldberg/mnt/投资笔记/NVDA_英伟达/文摘/为何四年来首次考虑减仓英伟达_美投君.md
 /sessions/ecstatic-bold-brown/mnt/投资笔记/WTKWY_威科/商业模式深度分析.md
+/sessions/festive-practical-hypatia/mnt/投资笔记/WTKWY_威科/护城河与竞争优势深度分析.md
