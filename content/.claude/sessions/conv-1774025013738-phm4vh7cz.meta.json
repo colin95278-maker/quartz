@@ -3,11 +3,10 @@
   "title": "Flag BCRED CLO issuance",
   "titleGenerationStatus": "success",
   "createdAt": 1774025013738,
-  "updatedAt": 1774025460873,
+  "updatedAt": 1775362892044,
   "lastResponseAt": 1774025460873,
   "sessionId": "81403efd-be78-4fec-84ad-a7b7cf8bd21a",
   "sdkSessionId": "81403efd-be78-4fec-84ad-a7b7cf8bd21a",
-  "currentNote": "每日重点追踪/BX黑石情报简报_20260320.md",
   "usage": {
     "model": "opus",
     "inputTokens": 1,
